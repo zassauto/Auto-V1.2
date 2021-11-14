@@ -135,7 +135,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <i class="fa fa-question-circle" id="fa-usage"></i>
                 <label for="usage" class="form-label">Usage <span class="requis">*</span></label>
                 <select class="form-select" id="usage" onclick="changeStyle()">
-                    <option value="Veuillez sélectionner" selected="selected" class="">Veuillez sélectionner
+                    <option value="" selected="selected" class="">Veuillez sélectionner
                     </option>
                     <option value="Promenades privées">Promenades privées</option>
                     <option value="Tournées régulières">Tournées régulières</option>
@@ -152,7 +152,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <i class="fa fa-question-circle"></i>
                 <label for="stationnement" class="form-label">Stationnement <span class="requis">*</span></label>
                 <select class="form-select" id="stationnement">
-                    <option value="Veuillez sélectionner" selected="selected" class="">Veuillez sélectionner
+                    <option value="" selected="selected" class="">Veuillez sélectionner
                     </option>
                     <option value="Voie publique">Voie publique</option>
                     <option value="Garage">Garage</option>
@@ -169,11 +169,11 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <label for="garantieSouhaiteeConducteurPrincipal" class="form-label">Garanties souhaitées <span
                         class="requis">*</span></label>
                 <select class="form-select" id="garantieSouhaiteeConducteurPrincipal">
-                    <option value="Veuillez sélectionner" selected="selected" class="">Veuillez sélectionner
+                    <option value="" selected="selected" class="">Veuillez sélectionner
                     </option>
-                    <option value="Tiers (Responsabilité civile, défense et recours)" class="">Tiers simple</option>
-                    <option value="Tiers + Vol + Incendie" class="">Intermédiaire </option>
-                    <option value="Tous risques" class="">Tous risques </option>
+                    <option value="Tiers" class="">Tiers simple</option>
+                    <option value="Intermédiaire" class="">Intermédiaire</option>
+                    <option value="Tous risques" class="">Tous risques</option>
                 </select>
             </div>
         </div>
@@ -188,7 +188,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
             <div>
                 <i class="fa fa-history" style="font-size:48px;"></i>
 
-                <h3 style="  margin-bottom: 49px !important;" class="my-3">Vos antecedent en assurance</h3>
+                <h3 style="margin-bottom: 49px !important;" class="my-3">Vos antecedent en assurance</h3>
             </div>
 
 
@@ -216,8 +216,8 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 
                 <label for="bonusMalus" class="form-label">Bonus ou malus auto <span class="requis">*</span></label>
                 <select class="form-select" id="bonusMalus">
-                    <option value="Veuillez sélectionner" selected="selected" class="">
-                        Veuillez sélectionner </option>
+                    <option value="" selected="selected" class="">
+                        Veuillez sélectionner</option>
                     <option value="0.50 soit 50% de bonus" class="frm_other_trigger">
                         0.50 soit 50% de bonus </option>
                     <option value="0.51 soit 49% de bonus" class="">
@@ -849,7 +849,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <label for="motifResiliation36DerniersMois" class="form-label">Indiquez le motif <span
                         class="requis">*</span></label>
                 <select class="form-select" id="motifResiliation36DerniersMois">
-                    <option value="Veuillez sélectionner">Veuillez sélectionner</option>
+                    <option value="">Veuillez sélectionner</option>
                     <option value="Non paiement">Non paiement de prime</option>
                     <option value="Sinistre et alcoolemie">Sinistre</option>
                     <option value="Sinistre et alcoolemie">Alcoolemie</option>
@@ -892,7 +892,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 
             <div class='mb-3 col-md-5 Sous-questions' style="display: none;" name="isEuSinistres36DerniersMois">
                 <label for="nombreSinistres" class="form-label">Nombre de sinistres <span class="requis">*</span></label>
-                <input id="nombreSinistres" type="number" min='0' class="form-control" />
+                <input id="nombreSinistres" type="number" min='0' max='10' class="form-control" />
             </div>
             
             <div id="sinistres" class="row">
@@ -923,7 +923,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <label for="typeSanction" class="form-label">La raison de la sanction <span
                         class="requis">*</span></label>
                 <select class="form-select" id="typeSanction">
-                    <option value="Veuillez sélectionner">Veuillez sélectionner</option>
+                    <option value="">Veuillez sélectionner</option>
                     <option value='Annulation permis'>Annulation permis</option>
                     <option value='Suspension permis'>Suspension permis</option>
                     <option value='ATTENTE_JUGEMENT'>Attente jugement</option>
@@ -950,7 +950,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <label for="situationFamiliale" class="form-label">Situation familiale <span
                         class="requis">*</span></label>
                 <select class="form-select" id="situationFamiliale">
-                    <option>Veuillez sélectionner </option>
+                    <option value=''>Veuillez sélectionner </option>
                     <option value="Célibataire" class="">Célibataire</option>
                     <option value="Marié(e)" class="">Marié(e)</option>
                     <option value="Concubin(e)" class="">Concubin(e)</option>
@@ -978,7 +978,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <i class="fa fa-question-circle"></i>
                 <label for="civilite" class="form-label">Civilité <span class="requis">*</span></label>
                 <select class="form-select" id="civilite">
-                    <option value="Veuillez sélectionner" selected="selected" class="">Veuillez sélectionner</option>
+                    <option value="" selected="selected" class="">Veuillez sélectionner</option>
                     <option value="Mademoiselle" class="">Mademoiselle</option>
                     <option value="Madame" class="">Madame</option>
                     <option value="Monsieur" class="">Monsieur</option>
