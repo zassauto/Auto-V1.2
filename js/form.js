@@ -93,7 +93,7 @@ $(function() {
   $('#submit').on('click', function() {
     const data = getFormData();
     console.log(data);
-    $.ajax({ type: "POST", url: "https://zenith-france.fr:99/devis-api/v2/src/public/auto", data, dataType: 'json',
+    $.ajax({ type: "GET", url: "https://zenith-france.fr:99/devis-api/v2/src/public/test-infos", data, dataType: 'json',
       //success: function(data) { window.location.href = '/Auto-V1.2/confirmation.html'; },
         success: function(data) { console.log(data); return false; },
       error: function(error) { console.log("error", error); }
